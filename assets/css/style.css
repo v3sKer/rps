@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF Pro Display";
+}
+
+body {
+  background-color: #313131;
+  color: #d9d9d9;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 36px;
+}
+
+.game-frame {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 600px;
+  height: 300px;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.game-frame h3 {
+  font-size: 3.2rem;
+  text-align: center;
+  padding: 12px;
+}
+
+.game-frame p {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+#round-p {
+  color: #b6bac3;
+}
+
+.game-frame button {
+  padding: 12px;
+  margin: auto 12px 16px 12px;
+  font-size: 2.4rem;
+  border-radius: 6px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
