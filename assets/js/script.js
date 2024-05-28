@@ -1,4 +1,3 @@
-// Init vars
 let playerScore = 0;
 let computerScore = 0;
 let currentRound = 0;
@@ -6,7 +5,7 @@ const ROUND_COUNTER = document.querySelector("#round-counter");
 const PLAYER_SCORE_TEXT = document.querySelector('#player-score');
 const COMPUTER_SCORE_TEXT = document.querySelector('#computer-score');
 
-// Init HTML round counter
+// Initializing round counter on site to not be blank on load.
 ROUND_COUNTER.innerHTML = currentRound;
 
 // Random based computer choice between rock, paper and scissors
@@ -29,7 +28,7 @@ function getPlayerChoice(){
     : "Input error! Try again."
 }
 
-// Winner determinant algorithm (yea, hardcoded, what did you expect? It's freakin rock paper scissors.)
+// Game round algorithm (yea, hardcoded, what did you expect? It's freakin rock paper scissors.)
 function playRound(playerChoice, computerChoice){
   return playerChoice == 'rock' && computerChoice == 'scissors' ? 'player win'
     : playerChoice == 'paper' && computerChoice == 'rock' ? 'player win'
