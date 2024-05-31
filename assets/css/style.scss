@@ -8,6 +8,7 @@
 body {
   background-color: #313131;
   color: #d9d9d9;
+  height: 100svh;
 }
 
 html {font-size: 62.5%;}
@@ -41,18 +42,48 @@ main {
   color: #bbbbbb;
 }
 
-.game-stats {
+// Game score section
+
+.game-score {
+  display: flex;
+  padding-top: 24px;
+}
+
+.game-score h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+[class*="game-score-"]{
+  width: 33.3%;
+}
+
+.game-score-round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#score-header {
+  font-size: 24px;
+  color: #979797;
+  margin: auto 0;
+}
+
+// Round winner section
+
+.round-winner {
   display: flex;
   flex-direction: column;
   margin: 24px 0;
 }
 
-.game-stats h3 {
+.round-winner h3 {
   font-size: 2.6rem;
   text-align: center;
 }
 
-
+// Buttons section
 
 .buttons {
   margin-top: auto;
@@ -70,7 +101,7 @@ main {
   padding: 8px;
   color: #d0d0d0;
   background-color: #5e5e5e;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   margin: 0 1px;
 }
@@ -81,3 +112,71 @@ main {
 
 #btn-rock {border-radius: 8px 0 0 8px;}
 #btn-scis {border-radius: 0 8px 8px 0;}
+
+// Game winner section
+
+.game-winner {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.game-winner h2 {
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+.final-score {
+  display: flex;
+  padding-top: 24px;
+}
+
+.final-score h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+[class*="final-score-"]{
+  width: 33.3%;
+}
+
+.final-score-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-winner button {
+  width: 50%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  color: #d0d0d0;
+  background-color: #5e5e5e;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 24px auto 0 auto;
+}
+
+.game-winner button:hover {
+  background-color: #7a7a7a;
+}
+
+// Footer section
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 24px;
+  position: fixed;
+  bottom: 0;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+
+footer a{
+  color: inherit;
+}

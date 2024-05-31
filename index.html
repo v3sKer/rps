@@ -10,11 +10,27 @@
 
 <body>
   <main>
-    <div class="game-frame">
-      <h1>Rock, Paper, Scissors!</h1>
-      <p>Round: <span id="round-counter"></span></p>
 
-      <div class="game-stats"></div>
+    <div class="game-frame">
+
+      
+      <h1>Rock, Paper, Scissors!</h1>
+
+      <div class="game-score">
+        <div class="game-score-player">
+          <h3>Player</h3>
+          <p id="player-score-text"></p>
+        </div>
+        <div class="game-score-round">
+          <p>Round: <span id="round-counter"></span></p>
+        </div>
+        <div class="game-score-computer">
+          <h3>Computer</h3>
+          <p id="computer-score-text"></p>
+        </div>
+      </div>
+      
+      <div class="round-winner"></div>
 
       <div class="buttons">
         <div class="button-wrapper">
@@ -23,10 +39,16 @@
           <button id="btn-scis">Scissors</button>
         </div>
       </div>
+
     </div>
 
   </main>
-
+  
+  <footer>
+    <p>by <a href="https://v3sker.site/" target="_blank" rel="noopener noreferrer">v3sker</a>
+      | <a href="https://github.com/v3sker/rps" target="_blank" rel="noopener noreferrer">Source Code</a></p>
+  </footer>
+  
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
